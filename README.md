@@ -88,7 +88,7 @@ After running, `outputs/figures/` will contain 9 PNG figures:
 | fig4_default_by_age_group.png | Default rate per age bucket |
 | fig5_correlation_heatmap.png | Pearson correlation matrix |
 | fig6_avg_bill_over_time.png | Monthly bill trend (Apr–Sep) |
-| fig7_default_vs_delays.png | Default rate vs consecutive delays |
+| fig7_default_vs_delays.png | Default rate by number of months with delays |
 | fig8_utilisation_vs_payment_ratio.png | Scatter: utilisation vs payment ratio |
 | fig9_age_distribution.png | Age distribution by default status |
 
