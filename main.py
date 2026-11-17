@@ -83,6 +83,7 @@ def _generate_synthetic_data(filepath: str, n: int = 30_000) -> None:
         columns=df.columns
     )
     out = pd.concat([header_row, df], ignore_index=True)
+    os.makedirs(os.path.dirname(os.path.abspath(filepath)), exist_ok=True)
     out.to_csv(filepath, index=False, header=True)
     print(f"[main] Synthetic dataset written to {filepath}  ({n:,} rows)")
 
