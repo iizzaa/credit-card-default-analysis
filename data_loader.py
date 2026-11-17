@@ -75,7 +75,7 @@ class CreditDataLoader:
         pd.DataFrame
             The raw, unmodified dataset.
         """
-        self.df = pd.read_csv(self.filepath, header=1)   # skip the sub-header row
+        self.df = pd.read_csv(self.filepath)
         # Rename target column for convenience
         self.df.rename(columns={"default.payment.next.month": "DEFAULT"}, inplace=True)
         print(f"[DataLoader] Loaded {len(self.df):,} rows × {len(self.df.columns)} columns")
