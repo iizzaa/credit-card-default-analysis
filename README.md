@@ -1,4 +1,7 @@
-# Credit Card Default Analysis – Python Final Project
+# Credit Card Default Analysis
+
+## Overview
+Python analysis of 30,000 credit card client records, focusing on data quality, repayment patterns, and factors associated with default. The project uses a modular workflow for loading, preprocessing, statistical analysis, and visualization.
 
 ## Dataset
 UCI Default of Credit Card Clients  
