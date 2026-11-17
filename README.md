@@ -10,20 +10,21 @@ https://www.kaggle.com/datasets/uciml/default-card-clients-dataset
 
 ## Project Structure
 
+```text
+credit-card-default-analysis/
+├── main.py              # Runs the full pipeline
+├── data_loader.py       # Loads data and checks quality
+├── preprocessor.py      # Cleans data and creates features
+├── analyzer.py          # Calculates statistical summaries
+├── visualizer.py        # Generates charts
+├── requirements.txt     # Required Python packages
+├── README.md
+└── fig*.png             # Charts displayed in this repository
 ```
-credit_default_project/
-├── main.py                  ← Entry point: runs the full pipeline
-├── requirements.txt
-├── data/
-│   └── UCI_Credit_Card.csv  ← Place the Kaggle CSV here
-├── outputs/
-│   └── figures/             ← All PNG figures saved here (auto-created)
-└── src/
-    ├── data_loader.py        ← Module 1: Loading & quality inspection
-    ├── preprocessor.py       ← Module 2: Cleaning & feature engineering
-    ├── analyzer.py           ← Module 3: Statistical analysis
-    └── visualizer.py         ← Module 4: Matplotlib figures
-```
+
+The following folders are used when running the project:
+- `data/`: Place the downloaded `UCI_Credit_Card.csv` here.
+- `outputs/figures/`: Generated charts are saved here automatically.
 
 ## How to Run
 
