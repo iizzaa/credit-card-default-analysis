@@ -66,8 +66,19 @@ After running, `outputs/figures/` will contain 9 PNG figures:
 ### Default Distribution
 ![Default distribution](fig1_default_distribution.png)
 
+Of 30,000 clients, 6,636 (22.1%) defaulted. This class imbalance
+is important when interpreting results or evaluating future models.
+
 ### Credit Limit by Default Status
 ![Credit limit by default status](fig2_credit_limit_histogram.png)
 
+Clients who defaulted were more concentrated at lower credit limits.
+The distributions overlap, so credit limit alone does not separate
+defaulters from non-defaulters.
+
 ### Repayment Delays and Default
 ![Default rate versus repayment delays](fig7_default_vs_delays.png)
+
+Default rates increased from 11.7% among clients with no delayed
+months to 70.3% among those with delays in all six observed months.
+This shows an association, rather than evidence of causation.
