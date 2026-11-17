@@ -5,7 +5,7 @@ Python analysis of 30,000 credit card client records, focusing on data quality, 
 
 ## Dataset
 UCI Default of Credit Card Clients  
-https://www.kaggle.com/datasets/uciml/default-card-clients-dataset  
+(https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset)
 30,000 rows × 25 columns
 
 ## Project Structure
