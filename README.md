@@ -8,6 +8,37 @@ UCI Default of Credit Card Clients
 (https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset)
 30,000 rows × 25 columns
 
+## Analysis Highlights
+
+### Default Distribution
+![Default distribution](fig1_default_distribution.png)
+
+Of 30,000 clients, 6,636 (22.1%) defaulted. This class imbalance
+is important when interpreting results or evaluating future models.
+
+### Credit Limit by Default Status
+![Credit limit by default status](fig2_credit_limit_histogram.png)
+
+Clients who defaulted were more concentrated at lower credit limits.
+The distributions overlap, so credit limit alone does not separate
+defaulters from non-defaulters.
+
+### Repayment Delays and Default
+![Default rate versus repayment delays](fig7_default_vs_delays.png)
+
+Default rates increased from 11.7% among clients with no delayed
+months to 70.3% among those with delays in all six observed months.
+This shows an association, rather than evidence of causation.
+
+## Limitations
+
+- This analysis uses historical credit card data from Taiwan;
+  findings may not generalize to other populations or current conditions.
+- Relationships are observational and do not establish causation.
+- Outlier capping changes extreme values and may affect the results.
+- This project explores patterns; it does not build or evaluate
+  a predictive default model.
+
 ## Project Structure
 
 ```text
@@ -61,33 +92,4 @@ After running, `outputs/figures/` will contain 9 PNG figures:
 | fig8_utilisation_vs_payment_ratio.png | Scatter: utilisation vs payment ratio |
 | fig9_age_distribution.png | Age distribution by default status |
 
-## Analysis Highlights
 
-### Default Distribution
-![Default distribution](fig1_default_distribution.png)
-
-Of 30,000 clients, 6,636 (22.1%) defaulted. This class imbalance
-is important when interpreting results or evaluating future models.
-
-### Credit Limit by Default Status
-![Credit limit by default status](fig2_credit_limit_histogram.png)
-
-Clients who defaulted were more concentrated at lower credit limits.
-The distributions overlap, so credit limit alone does not separate
-defaulters from non-defaulters.
-
-### Repayment Delays and Default
-![Default rate versus repayment delays](fig7_default_vs_delays.png)
-
-Default rates increased from 11.7% among clients with no delayed
-months to 70.3% among those with delays in all six observed months.
-This shows an association, rather than evidence of causation.
-
-## Limitations
-
-- This analysis uses historical credit card data from Taiwan;
-  findings may not generalize to other populations or current conditions.
-- Relationships are observational and do not establish causation.
-- Outlier capping changes extreme values and may affect the results.
-- This project explores patterns; it does not build or evaluate
-  a predictive default model.
