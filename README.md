@@ -56,3 +56,14 @@ After running, `outputs/figures/` will contain 9 PNG figures:
 | fig7_default_vs_delays.png | Default rate vs consecutive delays |
 | fig8_utilisation_vs_payment_ratio.png | Scatter: utilisation vs payment ratio |
 | fig9_age_distribution.png | Age distribution by default status |
+
+## Analysis Highlights
+
+### Default Distribution
+![Default distribution](fig1_default_distribution.png)
+
+### Credit Limit by Default Status
+![Credit limit by default status](fig2_credit_limit_histogram.png)
+
+### Repayment Delays and Default
+![Default rate versus repayment delays](fig7_default_vs_delays.png)
