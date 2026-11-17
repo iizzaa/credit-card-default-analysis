@@ -77,14 +77,8 @@ def _generate_synthetic_data(filepath: str, n: int = 30_000) -> None:
 
     df["default.payment.next.month"] = rng.choice([0, 1], n, p=[0.778, 0.222])
 
-    # Write with a dummy first row to mimic UCI header layout
-    header_row = pd.DataFrame(
-        [["ID"] + list(df.columns[1:])],
-        columns=df.columns
-    )
-    out = pd.concat([header_row, df], ignore_index=True)
     os.makedirs(os.path.dirname(os.path.abspath(filepath)), exist_ok=True)
-    out.to_csv(filepath, index=False, header=True)
+    df.to_csv(filepath, index=False, header=True)
     print(f"[main] Synthetic dataset written to {filepath}  ({n:,} rows)")
 
 
