@@ -82,3 +82,12 @@ defaulters from non-defaulters.
 Default rates increased from 11.7% among clients with no delayed
 months to 70.3% among those with delays in all six observed months.
 This shows an association, rather than evidence of causation.
+
+## Limitations
+
+- This analysis uses historical credit card data from Taiwan;
+  findings may not generalize to other populations or current conditions.
+- Relationships are observational and do not establish causation.
+- Outlier capping changes extreme values and may affect the results.
+- This project explores patterns; it does not build or evaluate
+  a predictive default model.
